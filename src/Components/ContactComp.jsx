@@ -8,7 +8,9 @@ function ContactComp(props) {
                     </a>
                 </div>
             <div className="contact-name">
-                 <p>{props.name}</p>
+                <a href={props.link} target="_blank">
+                    <p>{props.name}</p>
+                </a>
             </div>
         </div>
     );
