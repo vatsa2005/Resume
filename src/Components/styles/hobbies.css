@@ -1,0 +1,51 @@
+.hobbies {
+    display: grid;
+    grid-template-columns: 0.5fr 3fr 0.5fr;
+    width: 100%;
+    height: max(100vh, fit-content);
+    overscroll-behavior: contain;
+    font-size: 3vmin;
+    padding-block: 20px;
+    animation: appear 1s ease-in-out;
+}
+
+.hobbies h1 {
+    font-weight: 500;
+}
+
+.hobbies .MuiSvgIcon-root {
+    font-size: 7.5vmin;
+}
+.center-hobbies {
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+}
+
+.hobbies .content-body {
+    gap: 10px;
+    padding-block: 20px;
+}
+
+.center-hobbies>.hobbies-header>.header-text {
+    animation: appear 1.5s;
+}
+.hobbies-body {
+    animation: appear 1.5s;
+}
+
+/*Media queries*/
+@media only screen and (max-width: 600px) {
+    .hobbies .content-body {
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        grid-template-rows: repeat(auto-fit, minmax(150px, 20%));
+        font-size: 1.5vmin;
+        margin-block: 30px;
+        place-items: center;
+    }
+}
+
+
+
+
+

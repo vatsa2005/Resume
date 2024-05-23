@@ -1,0 +1,35 @@
+.contact-comp {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    font-weight: 500;
+}
+.contact-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+}
+.contact-icon img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vmin;
+    width: 10vmin;
+    object-fit: contain;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+}
+.contact-icon img:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+}
+.contact-name {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

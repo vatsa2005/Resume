@@ -1,0 +1,132 @@
+* {
+    box-sizing: border-box;
+}
+
+.menu-comp {
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    color: #00bf63;
+    display: flex;
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    -webkit-animation: expand 1s;
+    animation: expand 1s;
+    overscroll-behavior: contain;
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(17, 25, 40, 0.75);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+}
+
+.menu-contract {
+    -webkit-animation: contract 1s;
+    animation: contract 1s;
+}
+
+.menu-contract>.items {
+    font-size: 2vmin !important;
+}
+
+.menu-icon:hover {
+    cursor: pointer;
+}
+.menu-comp>.items {
+    flex: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 5vmin;
+}
+
+
+.link-menu {
+    text-decoration: none;
+}
+
+.menu-comp>.items>.link-menu {
+    width: 100%;
+    text-align: center;
+    transition: all 0.5s;
+    color: #00bf63;
+}
+.menu-comp>.items>.link-menu:hover {
+    background-color: #00bf63;
+    color: #000000;
+    cursor: pointer;
+}
+.menu-comp>.items>.link-menu:active {
+    background-color: #00bf63;
+    color: #000000;
+    cursor: pointer;
+}
+
+
+/*Tupdate section start*/
+
+.menu-comp>.items>.tupdate {
+    width: 100%;
+    text-align: center;
+    transition: all 0.1s;
+    color: #00bf63;
+}
+
+/*Only for tupdate hover. Change this to change the hover style of tupdate*/
+.menu-comp>.items>.tupdate:hover {
+    background-color: #00bf63;
+    color: #000000;
+    cursor: pointer;
+}
+
+/*Tupdate section end*/
+
+
+.menu-comp>.icon>.close-icon {
+    flex: 10%;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    margin: 2rem;
+}
+
+.menu-comp>.icon>.close-icon {
+    font-size: 2vmin;
+}
+
+.menu-comp>.icon>.close-icon:hover {
+    cursor: pointer;
+}
+
+
+
+
+
+/*Animation keyframes*/
+@keyframes expand {
+    0% {
+        height: 0%;
+    }
+    100% {
+        height: 100%;
+    }
+}
+
+@keyframes contract {
+    0% {
+        height: 100%;
+    }
+    100% {
+        height: 0%;
+    }
+}
+
+
+
+
+
+
+

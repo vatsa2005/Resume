@@ -1,0 +1,13 @@
+.arrow {
+    font-size: 2vmin;
+    color: #d9d9da;
+    background-color: #545454;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-block: 0.2rem;
+    animation: appear 1s ease-in-out;
+}
+.arrow:hover {
+    cursor: pointer;
+}

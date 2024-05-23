@@ -1,0 +1,50 @@
+.projects {
+    display: grid;
+    grid-template-columns: 0.5fr 3fr 0.5fr;
+    width: 100%;
+    height: max(100vh, fit-content);
+    overscroll-behavior: contain;
+    font-size: 3vmin;
+    padding-block: 10px;
+    background-color: #000000;
+    animation: appear 1s ease-in-out;
+}
+
+.projects h1 {
+    font-weight: 500;
+}
+
+.projects .MuiSvgIcon-root {
+    font-size: 7.5vmin;
+}
+.center-projects {
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+}
+
+.projects .content-body {
+    padding-block: 20px;
+    gap: 20px;
+}
+
+.center-projects>.projects-header>.header-text {
+    animation: appear 1.5s;
+}
+
+/*Media queries*/
+@media only screen and (max-width: 600px) {
+    .projects {
+        height: max(100vh, fit-content);
+    }
+    .projects .content-body {
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        grid-template-rows: repeat(auto-fit, minmax(150px, 30%));
+        margin-block: 30px;
+        place-items: center;
+        font-size: 2vmin;
+    }
+}
+
+
+

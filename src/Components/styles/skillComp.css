@@ -1,0 +1,45 @@
+
+a {
+    text-decoration: none;
+    color: #00bf63;
+}
+
+.skill-comp {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    height: 70%;
+    animation: appear 2s;
+    text-align: center;
+    font-weight: 500;
+}
+
+.skill-comp>.skill-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.skill-comp>a>.skill-icon>img {
+    display: inline;
+    height: 50%;
+    width: 50%;
+    object-fit: contain;
+    transition: all 0.5s;
+}
+.skill-comp .skill-icon img:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+/*Media queries*/
+
+
+
+
+
+
+

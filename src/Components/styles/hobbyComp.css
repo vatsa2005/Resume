@@ -1,0 +1,30 @@
+.hobby-comp {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+}
+.hobby-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hobby-icon img {
+    height: 80%;
+    width: 80%;
+    object-fit: contain;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+}
+.hobby-icon img:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+}
+.hobby-name {
+    text-align: center;
+}
+.hobby-name p{
+    font-size: 3vmin;
+}
