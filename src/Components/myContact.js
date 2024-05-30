@@ -14,7 +14,7 @@ const myContact = {
     insta: [
         "Instagram",
         Instagram,
-        "https://www.instagram.com/its_me_vatsa/",
+        "https://www.instagram.com/vatzzza/",
     ],
     github: [
         "GitHub",
